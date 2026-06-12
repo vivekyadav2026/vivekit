@@ -23,10 +23,10 @@ const About = () => {
           >
             <h2>Our Story</h2>
             <p>
-              VivekTech was founded with a clear mission: to empower small setups, local businesses, and startups to scale via technology. In an increasingly digital world, many businesses struggle to establish a strong online presence. We are here to change that.
+              VivekTech was born out of a simple observation: local Indian businesses and ambitious startups were being left behind in the digital race due to subpar technology solutions.
             </p>
             <p>
-              We believe that a professional, high-performing website or app shouldn't be a luxury reserved for large corporations. It should be accessible, affordable, and tailored to meet the unique needs of your growing business.
+              We established VivekTech to bring Silicon Valley-level engineering and premium design aesthetics to businesses across Delhi NCR and India.
             </p>
           </motion.div>
 
@@ -37,29 +37,29 @@ const About = () => {
             viewport={{ once: true }}
           >
             <div className="about-image-placeholder">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="VivekTech Team" className="dummy-img" />
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="VivekTech expert developers and designers in Delhi NCR office" className="dummy-img" />
             </div>
           </motion.div>
         </section>
 
         {/* Values */}
         <section className="values-section section-padding">
-          <h2 className="text-center section-title mb-4">Our Core Values</h2>
+          <h2 className="text-center section-title mb-4">Mission, Vision & Trust</h2>
           <div className="values-grid">
             <motion.div className="value-card" whileHover={{ y: -10 }}>
               <div className="icon-box"><Target /></div>
-              <h3>Result-Oriented</h3>
-              <p>We focus on delivering digital solutions that generate leads, increase sales, and drive actual business growth.</p>
+              <h3>Our Mission</h3>
+              <p>To bridge the digital gap by engineering highly scalable, revenue-generating digital products for businesses of all sizes.</p>
             </motion.div>
             <motion.div className="value-card" whileHover={{ y: -10 }}>
               <div className="icon-box"><Lightbulb /></div>
-              <h3>Innovation</h3>
-              <p>Using the latest tech stacks and modern design principles to ensure your business stands out from the competition.</p>
+              <h3>Our Vision</h3>
+              <p>To be the most trusted and innovative technology partner for brands navigating the digital economy.</p>
             </motion.div>
             <motion.div className="value-card" whileHover={{ y: -10 }}>
               <div className="icon-box"><Users /></div>
-              <h3>Client-Centric</h3>
-              <p>Your success is our success. We prioritize clear communication, transparency, and ongoing support.</p>
+              <h3>Why Trust Us</h3>
+              <p>We are radically transparent. We don't speak in confusing technical jargon; we speak in business outcomes. We are trusted by clinics, educational institutions, real estate firms, and retail startups.</p>
             </motion.div>
           </div>
         </section>

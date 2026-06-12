@@ -31,8 +31,8 @@ const Contact = () => {
   return (
     <main className="contact-page">
       <PageBanner 
-        title="Get in Touch" 
-        subtitle="Ready to start your digital journey? Contact us for a free consultation."
+        title="Get In Touch With Our Tech Experts" 
+        subtitle="Ready to scale your business? Contact VivekTech today. We provide free consultations for web development, software automation, and digital marketing."
         icon={MessageCircle}
       />
       <div className="container" style={{ paddingBottom: '4rem' }}>
@@ -46,7 +46,7 @@ const Contact = () => {
           >
             <div className="contact-info-card">
               <h3>Contact Information</h3>
-              <p className="info-desc">Fill up the form and our team will get back to you within 24 hours.</p>
+              <p className="info-desc">Whether you need a complete digital transformation or a minor website overhaul, our team is ready to listen. Drop us a message, and a senior technical strategist will get back to you within 24 hours.</p>
 
               <div className="info-items">
                 <div className="info-item">

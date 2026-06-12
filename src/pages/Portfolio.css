@@ -442,5 +442,10 @@
 @media (max-width: 768px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .dev-profile-section {
+    padding: 1rem 0 2rem;
   }
 }

@@ -110,3 +110,22 @@
     padding: 3rem 1.5rem;
   }
 }
+
+@media (max-width: 576px) {
+  .page-banner-container {
+    padding: 5rem 0 1.5rem;
+  }
+  
+  .page-banner-title {
+    font-size: 2rem;
+  }
+  
+  .page-banner-subtitle {
+    font-size: 1rem;
+  }
+  
+  .page-banner-face {
+    padding: 2rem 1rem;
+    border-radius: 20px;
+  }
+}

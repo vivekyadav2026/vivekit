@@ -18,43 +18,43 @@ const Services = () => {
     {
       icon: Monitor,
       title: 'Web Development',
-      desc: 'Custom-built, high-performance websites that look great on all devices. From landing pages to complex corporate sites, we ensure speed, SEO optimization, and an excellent user experience.',
-      features: ['Responsive Design', 'SEO Optimization', 'CMS Integration', 'Fast Loading Speeds'],
+      desc: 'Your website is your 24/7 salesperson. We build ultra-modern, high-converting business websites that establish authority and capture leads. Whether you need a corporate site, a portal for your school, or a landing page for your local business, we engineer platforms that perform flawlessly.',
+      features: ['3x Faster Page Load Speeds', 'Built-in On-Page SEO Architecture', 'Mobile-First Responsive Design', 'Custom Dashboards'],
       price: '₹5,000'
     },
     {
       icon: Smartphone,
       title: 'Mobile App Development',
-      desc: 'Engage your customers on the go with native or cross-platform mobile applications. We build intuitive, secure, and scalable apps for iOS and Android platforms.',
-      features: ['iOS & Android', 'Cross-Platform', 'UI/UX Focused', 'API Integration'],
+      desc: 'Engage your customers right in their pockets. We design and develop scalable, secure, and incredibly intuitive mobile applications. From native Swift/Kotlin apps to dynamic cross-platform Flutter solutions, we turn complex ideas into seamless user experiences.',
+      features: ['Higher User Retention & Engagement', 'Native Device Performance', 'Seamless Cross-Platform Capabilities', 'Push Notifications'],
       price: '₹15,000'
     },
     {
       icon: ShoppingCart,
       title: 'E-Commerce Solutions',
-      desc: 'Robust online stores designed to convert visitors into buyers. Secure payment gateways, inventory management, and seamless checkout experiences.',
-      features: ['Payment Gateways', 'Inventory Management', 'Secure Checkout', 'Custom Carts'],
+      desc: 'Stop losing sales to clunky checkout processes. We build robust online stores engineered for high volume, maximum security, and exceptional user experiences. Whether you are a local boutique transitioning online or a large-scale distributor, our Shopify and custom e-commerce solutions scale with your inventory.',
+      features: ['Frictionless Checkout Experience', 'Highly Secure Payment Processing', 'Automated Inventory Synchronization', 'Multi-vendor Support'],
       price: '₹10,000'
     },
     {
       icon: Code,
       title: 'Custom Software Development',
-      desc: 'Tailor-made software solutions to automate your business processes and increase efficiency. We build what off-the-shelf software cant provide.',
-      features: ['Process Automation', 'Scalable Architecture', 'Secure Data', 'Custom Workflows'],
+      desc: 'Off-the-shelf software rarely fits perfectly. We build bespoke software architectures, including custom ERPs and CRMs, tailored specifically to your operational workflows. Eliminate manual data entry, reduce human error, and automate your business from the ground up.',
+      features: ['100% Tailored to Your Workflows', 'Scalable Cloud Architecture', 'Massive Reduction in Operational Overhead', 'Role-Based Access Control'],
       price: '₹25,000'
     },
     {
       icon: PenTool,
       title: 'UI/UX Design',
-      desc: 'Beautiful, user-centric interfaces that make your digital products a joy to use. We prioritize user research, wireframing, and interactive prototyping.',
-      features: ['User Research', 'Wireframing', 'Prototyping', 'Visual Design'],
+      desc: 'Great code needs great design. Our UI/UX design philosophy merges aesthetic brilliance with psychological principles of conversion. We design intuitive, frictionless interfaces that delight users and guide them effortlessly toward your business goals.',
+      features: ['Decreased Bounce Rates', 'Higher Customer Satisfaction', 'Consistent Premium Brand Identity', 'High-Fidelity Prototyping'],
       price: '₹5,000'
     },
     {
       icon: BarChart,
       title: 'Digital Marketing & SEO',
-      desc: 'Boost your online visibility and drive targeted traffic to your business through data-driven SEO, content strategies, and performance marketing.',
-      features: ['Keyword Research', 'On-page SEO', 'Content Strategy', 'Analytics Tracking'],
+      desc: 'A beautiful website is useless if nobody can find it. We implement aggressive, data-backed SEO and digital marketing strategies to put your business at the top of Google. We specialize in Local SEO to ensure your clinic, hotel, or local business dominates your geographical market.',
+      features: ['Predictable Organic Lead Generation', 'Dominance in Local Search', 'High ROI compared to Paid Ads', 'Technical SEO Audits'],
       price: '₹5,000/mo'
     }
   ];
@@ -91,10 +91,6 @@ const Services = () => {
                     <li key={fIndex}>{feature}</li>
                   ))}
                 </ul>
-              </div>
-
-              <div className="price-tag">
-                <span>Starting From: {service.price}</span>
               </div>
             </motion.div>
           ))}

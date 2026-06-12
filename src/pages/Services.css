@@ -114,5 +114,20 @@
 @media (max-width: 768px) {
   .services-detailed-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-detail-card {
+    padding: 1.5rem;
+  }
+  
+  .service-features ul {
+    grid-template-columns: 1fr; /* Stack features in 1 column instead of 2 */
+  }
+  
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
 }

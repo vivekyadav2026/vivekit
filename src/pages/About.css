@@ -104,7 +104,22 @@
 }
 
 @media (max-width: 768px) {
+  .page-title {
+    font-size: 2.2rem;
+  }
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about-image-placeholder {
+    height: 300px;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .value-card {
+    padding: 2rem 1.5rem;
   }
 }
