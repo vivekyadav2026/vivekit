@@ -24,11 +24,10 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Sync files to cPanel FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Deploy to Branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./public_html/
-          server-dir: /public_html/
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public_html
+          publish_branch: deploy
+          force_orphan: true
