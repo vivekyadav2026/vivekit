@@ -1,0 +1,118 @@
+.services-page {
+  /* padding handled by .page-wrapper in App.css */
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.services-detailed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.service-detail-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2.5rem;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon-wrapper {
+  width: 64px;
+  height: 64px;
+  background: var(--primary-gradient);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.25);
+}
+
+.service-detail-card h2 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.service-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.service-features {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.service-features h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.service-features ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.service-features li {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-features li::before {
+  content: '•';
+  color: var(--primary-accent);
+  font-weight: bold;
+}
+
+.price-tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.price-tag span {
+  font-weight: 600;
+  color: var(--text-primary);
+  background: rgba(59, 130, 246, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .services-detailed-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,12 @@
+/* App container to push footer to bottom if content is small */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Push all page content below the fixed banner (44px) + navbar (80px) */
+.page-wrapper {
+  flex: 1;
+  padding-top: 124px; /* 44px banner + 80px navbar */
+}

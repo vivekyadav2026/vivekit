@@ -1,0 +1,339 @@
+.admin-page {
+  min-height: calc(100vh - 124px); /* 44px banner + 80px navbar */
+  background-color: var(--background);
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.admin-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.enquiries-table-container {
+  flex: 1;
+  background-color: var(--surface);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.empty-state {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.empty-state svg {
+  color: var(--primary);
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.enquiries-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.enquiries-table th,
+.enquiries-table td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.enquiries-table th {
+  background-color: var(--surface-hover);
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.enquiries-table tr {
+  transition: background-color 0.2s;
+}
+
+.enquiries-table tr:hover {
+  background-color: var(--surface-hover);
+}
+
+.enquiries-table tr.active-row {
+  background-color: rgba(37, 99, 235, 0.05); /* Primary color with low opacity */
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info strong {
+  color: var(--text);
+}
+
+.user-email {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.service-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.service-tag.large {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.status-select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1em;
+  padding-right: 2rem;
+}
+
+.status-select.new {
+  color: #3b82f6; /* Blue */
+  border-color: #3b82f6;
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.status-select.in-progress {
+  color: #f59e0b; /* Amber */
+  border-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+.status-select.completed {
+  color: #10b981; /* Green */
+  border-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-badge.new {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.status-badge.progress {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.status-badge.completed {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  color: var(--text-secondary);
+}
+
+.btn-icon:hover {
+  background-color: var(--surface-hover);
+}
+
+.view-btn:hover {
+  color: var(--primary);
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.delete-btn:hover {
+  color: #ef4444; /* Red */
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Modal Sidebar */
+.enquiry-details-modal {
+  width: 400px;
+  background-color: var(--surface);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border);
+  position: sticky;
+  top: 144px; /* 44px banner + 80px navbar + 20px spacing */
+  height: max-content;
+  max-height: calc(100vh - 164px);
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.close-btn:hover {
+  background-color: var(--surface-hover);
+  color: var(--text);
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.detail-group {
+  margin-bottom: 1.5rem;
+}
+
+.detail-group:last-child {
+  margin-bottom: 0;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.detail-header h4 {
+  margin: 0;
+  font-size: 1.125rem;
+  color: var(--text);
+}
+
+.detail-group h5 {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detail-group p {
+  margin: 0;
+  color: var(--text);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: var(--primary);
+}
+
+.message-box {
+  background-color: var(--surface-hover);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.message-box p {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .admin-content {
+    flex-direction: column;
+  }
+  
+  .enquiry-details-modal {
+    width: 100%;
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .enquiries-table th,
+  .enquiries-table td {
+    padding: 0.75rem;
+  }
+  
+  .status-select {
+    padding: 0.25rem 0.5rem;
+    padding-right: 1.5rem;
+  }
+}
